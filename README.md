@@ -3,7 +3,7 @@
 Projekto nusiklonavimas:
 
 ```bash
-git clone git@github.com:Projektiniai-darbai/vieno_puslapio_svetaine.git
+git clone https://github.com/Projektiniai-darbai/vieno_puslapio_svetaine.git
 ```
 Prieš atlikdami pakeitimus, pasikeiskite į savo branch'ą:
 ```bash
