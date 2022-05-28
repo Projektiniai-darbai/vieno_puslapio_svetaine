@@ -2,8 +2,20 @@
 Variables
 =============== */
 /* Fonts */
-body {
-  background-color: #000000;
+.portfolio-bg {
+  background: #ffdd99;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
+.line-under-title {
+  width: 87px;
+  height: 3px;
+  background: #e5c37f;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=style.css.map */

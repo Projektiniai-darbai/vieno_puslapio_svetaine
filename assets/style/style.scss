@@ -1,5 +1,22 @@
-@use 'var';
+@import './var.scss';
 
-body {
-  background-color: var.$clr-black;
+// body {
+//   background-color: var.$clr-black;
+// }
+
+.portfolio-bg {
+	background: $clr-beige-1;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	text-align: center;
+  font-family: $font;
+}
+
+.line-under-title {
+	width: 87px;
+	height: 3px;
+	background: $clr-beige-2;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 15px;
 }

@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["var.scss","style.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAwBA;ACtBA;EACE,kBDEU","file":"style.css"}
+{
+    "version": 3,
+    "mappings": "ACAA;;kBAEkB;AAuBlB,WAAW;ADnBX,AAAA,aAAa,CAAC;EACb,UAAU,ECeG,OAAO;EDdpB,WAAW,EAAE,KAAK;EAClB,cAAc,EAAE,KAAK;EACrB,UAAU,EAAE,MAAM;EACjB,WAAW,ECeN,eAAe,EAAE,UAAU;CDdjC;;AAED,AAAA,iBAAiB,CAAC;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,UAAU,ECMG,OAAO;EDLpB,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,IAAI;CACnB",
+    "sources": [
+        "style.scss",
+        "var.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
