@@ -1,5 +1,30 @@
 @use 'var';
 
 body {
-  background-color: var.$clr-black;
+  margin: 0;
+  padding: 0;
+  background-color: var.$clr-purple-1;
+}
+nav{
+    width: 100%;
+    background: var.$clr-purple-2;
+    overflow: auto;
+}
+ul{
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+li{
+  float: right;
+}
+nav a{
+  width: 100;
+  display: block;
+  padding: 20px 15px;
+  text-decoration:none;
+  font-family: Arial;
+  color: #643a79;
+  text-align:center;
+
 }
