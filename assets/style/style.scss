@@ -1,5 +1,30 @@
 @use 'var';
 
 body {
-  background-color: var.$clr-black;
+  background-color: var.$clr-blue-1;
+  color: var.$clr-white;
+  margin-top: 150px;
 }
+
+.form-control {
+  background-color: #273a71;
+  border: none;
+}
+
+::placeholder{
+  color: white !important;
+ }
+.myButton {
+	background-color: #18a0cc;
+	border-radius:3px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:'Titillium Web', sans-serif;
+	font-size:15px;
+	padding:18px 76px;
+	text-decoration:none;
+}
+.button{
+  text-align: center;
+}
+

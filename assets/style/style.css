@@ -3,7 +3,33 @@ Variables
 =============== */
 /* Fonts */
 body {
-  background-color: #000000;
+  background-color: #3c5499;
+  color: #ffffff;
+  margin-top: 150px;
+}
+
+.form-control {
+  background-color: #273a71;
+  border: none;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+.myButton {
+  background-color: #18a0cc;
+  border-radius: 3px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  padding: 18px 76px;
+  text-decoration: none;
+}
+
+.button {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
