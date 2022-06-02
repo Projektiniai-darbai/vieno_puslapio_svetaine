@@ -10,7 +10,7 @@ section {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   line-height: 1.5em;
 }
 
@@ -32,7 +32,7 @@ img {
 }
 
 h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 2.7em;
   font-weight: 600;
   color: #fff;
@@ -42,7 +42,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.4em;
   font-weight: 700;
   color: #fff;
@@ -187,4 +187,5 @@ p {
 Variables
 =============== */
 /* Fonts */
+
 /*# sourceMappingURL=style.css.map */
