@@ -1,8 +1,218 @@
+/* =============== 
+Variables
+=============== */
+/* Fonts */
+section {
+  background-color: #17c2a4;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.hr {
+  display: inline;
+  background-color: #14a58c;
+  border: 0;
+  width: 5%;
+  padding: 1.5px;
+  margin-left: 48%;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+header h1,
+section h2 {
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 12vh;
+  color: #ffffff;
+}
+
+h2,
+h5,
+button {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h5 {
+  font-weight: bold;
+}
+
+h5 {
+  padding-top: 5vh;
+  font-size: 1.2em;
+}
+
+div p {
+  font-weight: 300;
+}
+
+.desc {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+section div .img-fluid {
+  padding-left: 24%;
+  height: 124px;
+}
+
+section .row:nth-child(2) {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+@media (max-width: 1200px) {
+  section {
+    height: auto;
+  }
+
+  section .container-fluid .row:nth-child(2) {
+    padding: 0;
+    text-align: center;
+  }
+
+  section div .img-fluid {
+    padding-left: 0;
+    height: 80px !important;
+  }
+}
+@media (max-width: 425px) {
+  section div .img-fluid {
+    padding-left: 0;
+    height: 60px !important;
+  }
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+header {
+  padding-top: 30px;
+  height: 100vh;
+  background-color: #87509c;
+}
+
+nav {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active,
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: #643a79;
+}
+
+nav a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial;
+  text-align: center;
+}
+
+header > p {
+  text-align: center;
+  margin-top: 80px;
+}
+
+header > p > button {
+  font-size: 14px;
+  background-color: #eb7d4b;
+  color: #ffffff;
+  padding: 18px 105px;
+  border: 0;
+  border-bottom: 5px solid #c55725;
+}
+
+.navbar-brand {
+  padding-left: 200px;
+}
+
+@media (max-width: 425px) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+
+  header > p > button {
+    padding: 20px;
+  }
+}
+main body {
+  height: 100vh;
+  background-color: #e7f1f8;
+  align-content: center;
+}
+
+main hr {
+  color: rgb(148, 148, 148);
+  margin-left: 46.5%;
+  width: 7%;
+  border: 2px solid rgb(148, 148, 148);
+}
+
+main .container {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+main img {
+  margin-top: 35px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main .face {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main h6 {
+  color: rgb(2, 206, 233);
+}
+
+main .welcome {
+  align-content: space-between;
+}
+
+main p {
+  padding: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
 /* ==================PORTFOLIO KODAS============================ */
 /* reset */
-html, body, div,
-h1, h2, h3, h4, h5, h6, p, ol, ul, li,
-section {
+#main {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +224,7 @@ section {
   line-height: 1.5em;
 }
 
-button {
+#main button {
   border: none;
   background: none;
   outline: none;
@@ -26,12 +236,12 @@ li {
   list-style: none;
 }
 
-img {
+#main img {
   display: block;
   margin: 0 auto;
 }
 
-h1 {
+#main h1 {
   font-family: "Titillium Web", sans-serif;
   font-size: 2.7em;
   font-weight: 600;
@@ -41,7 +251,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h3 {
+#main h3 {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.4em;
   font-weight: 700;
@@ -51,7 +261,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-p {
+#main p {
   font-size: 1.1em;
   margin-bottom: 5px;
   display: block;
@@ -68,7 +278,7 @@ p {
   margin-bottom: 15px;
 }
 
-.button {
+#main .button {
   text-align: center;
   width: auto;
   height: auto;
@@ -183,9 +393,5 @@ p {
 }
 
 /* ==================PORTFOLIO KODAS PABAIGA============================ */
-/* =============== 
-Variables
-=============== */
-/* Fonts */
 
 /*# sourceMappingURL=style.css.map */
