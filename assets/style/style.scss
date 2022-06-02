@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use 'var';
 
 main body {
@@ -51,3 +52,10 @@ main p {
   vertical-align: middle;
   text-align: center;
 }
+=======
+@import './modules/var';
+
+@import './modules/services';
+
+@import './modules/header';
+>>>>>>> main
