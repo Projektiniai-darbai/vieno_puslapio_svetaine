@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB</title>
-    <link rel="stylesheet" href="assets/bootstrap-5.2/css/bootstrap.css" />
+    <!--Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-5.2/css/bootstrap.min.css">
+	<!--Font-->
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'> 
     <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
@@ -207,6 +210,56 @@
         </div>
       </div>
     </main>
+    		<!-- ====================PORTFOLIO======================== -->
+	
+
+    <section id="main">
+			<div class="background">
+				<div class="container">
+					<div class="title">
+						<h1>Our Portfolio</h1>
+						<div class="title-line"></div>
+					</div>
+					<div class="title-text">
+						<p>Neque porro quiaquam est, qui dolorem ipsum quia dolor sit amet<br/>
+							cosecterur, adipici velit, ipsum quia non numquam
+						</p>
+					</div> 
+	
+						<div class="buttons-container">
+							<ul class="buttons">
+								<li><button class="selected" data-filter="all">All</button></li>
+								<li><button data-filter="web">Web</button></li>
+								<li><button data-filter="apps">Apps</button></li>
+								<li><button data-filter="icons">Icons</button></li>
+							</ul>
+						</div>
+						<ul class="image">
+							<li class="all web col-xs-12 col-sm-6">
+								<img class="img-responsive" src="./assets/img/porfolio1.png" alt="portfolio item">
+								<h3>ISOMETRIC PERSPECTIVE MOCK-UP</h3>
+							</li>
+							<li class="all apps col-xs-12 col-sm-6">
+								<img class="img-responsive" src="./assets/img/portfolio2.png" alt="portfolio item">
+								<h3>TIME ZONE APP UI</h3>
+							</li>
+							<li class="all icons col-xs-12 col-sm-6">
+								<img class="img-responsive" src="./assets/img/portfolio3.png" alt="portfolio item">
+								<h3>VIRO MEDIA PLAYERS UI</h3>
+							</li>
+							<li class="all web col-xs-12 col-sm-6">
+								<img class="img-responsive" src="./assets/img/portfolio4.png" alt="portfolio item">
+								<h3>BLOG / MAGAZINE FLAT UI KIT</h3>
+							</li>
+						</ul>
+						<button type="button" class="button btn btn-default">LOAD MORE PROJECTS</button>
+					
+				</div>
+			</div>
+		</section>
+    		<!-- ================PORTFOLIO END=================== -->
+		<!--Bootstrap JS-->
     <script src="assets/bootstrap-5.2/js/bootstrap.js"></script>
+
   </body>
 </html>
