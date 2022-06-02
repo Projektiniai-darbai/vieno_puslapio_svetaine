@@ -3,7 +3,66 @@ Variables
 =============== */
 /* Fonts */
 body {
-  background-color: #000000;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+section {
+  background-color: #17c2a4;
+  height: 80vh;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.hr {
+  display: inline;
+  background-color: #14a58c;
+  border: 0;
+  width: 5%;
+  padding: 1.5px;
+  margin-left: 48%;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+h2 {
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 12vh;
+}
+
+h2,
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h5 {
+  padding-top: 5vh;
+  font-size: 1.2em;
+}
+
+div p {
+  font-weight: 300;
+}
+
+.desc {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+img {
+  height: 124px !important;
+}
+
+.img-fluid {
+  padding-left: 24%;
+}
+
+section > .row:nth-child(2) {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */
