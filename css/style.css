@@ -1,0 +1,54 @@
+@use 'var';
+body {
+  height: 100vh;
+  background-color: #e7f1f8;
+  align-content: center;
+}
+
+hr {
+  color: #949494;
+  margin-left: 46.5%;
+  width: 7%;
+  border: 2px solid #949494;
+}
+
+.container {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+img {
+  margin-top: 35px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.face {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h6 {
+  color: #02cee9;
+}
+
+.welcome {
+  align-content: space-between;
+}
+
+p {
+  padding: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
