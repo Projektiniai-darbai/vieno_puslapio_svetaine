@@ -2,14 +2,9 @@
 Variables
 =============== */
 /* Fonts */
-body {
-  font-family: "Titillium Web", sans-serif;
-  letter-spacing: 0.02em;
-}
-
 section {
   background-color: #17c2a4;
-  height: 80vh;
+  height: 100vh;
   color: #ffffff;
   font-family: "Titillium Web", sans-serif;
 }
@@ -25,15 +20,23 @@ section {
   opacity: 1;
 }
 
+h1,
 h2 {
   letter-spacing: 0.1em;
   text-align: center;
   padding-top: 12vh;
+  color: #ffffff;
 }
 
 h2,
-h5 {
+h5,
+button {
   text-transform: uppercase;
+}
+
+h1,
+h2,
+h5 {
   font-weight: bold;
 }
 
@@ -52,17 +55,108 @@ div p {
   line-height: 24px;
 }
 
-img {
-  height: 124px !important;
-}
-
-.img-fluid {
+section div .img-fluid {
   padding-left: 24%;
+  height: 124px;
 }
 
-section > .row:nth-child(2) {
-  padding-left: 20vw;
-  padding-right: 20vw;
+section .row:nth-child(2) {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+@media (max-width: 1200px) {
+  section {
+    height: auto;
+  }
+
+  section .container-fluid .row:nth-child(2) {
+    padding: 0;
+    text-align: center;
+  }
+
+  section div .img-fluid {
+    padding-left: 0;
+    height: 80px !important;
+  }
+}
+@media (max-width: 425px) {
+  section div .img-fluid {
+    padding-left: 0;
+    height: 60px !important;
+  }
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+header {
+  padding-top: 30px;
+  height: 100vh;
+  background-color: #87509c;
+}
+
+nav {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active,
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: #643a79;
+}
+
+nav a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial;
+  text-align: center;
+}
+
+header > p {
+  text-align: center;
+  margin-top: 80px;
+}
+
+header > p > button {
+  font-size: 14px;
+  background-color: #eb7d4b;
+  color: #ffffff;
+  padding: 18px 105px;
+  border: 0;
+  border-bottom: 5px solid #c55725;
+}
+
+.navbar-brand {
+  padding-left: 200px;
+}
+
+@media (max-width: 425px) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+
+  header > p > button {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
