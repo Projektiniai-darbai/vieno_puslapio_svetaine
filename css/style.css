@@ -1,23 +1,23 @@
 @use 'var';
-body {
+main body {
   height: 100vh;
   background-color: #e7f1f8;
   align-content: center;
 }
 
-hr {
+main hr {
   color: #949494;
   margin-left: 46.5%;
   width: 7%;
   border: 2px solid #949494;
 }
 
-.container {
+main .container {
   margin-top: 5rem;
   text-align: center;
 }
 
-img {
+main img {
   margin-top: 35px;
   margin: 5px;
   width: 30px;
@@ -25,7 +25,7 @@ img {
   border-radius: 50%;
 }
 
-.face {
+main .face {
   margin-top: 8rem;
   margin-bottom: 5rem;
   width: 220px;
@@ -33,19 +33,19 @@ img {
   border-radius: 50%;
 }
 
-a {
+main a {
   text-decoration: none;
 }
 
-h6 {
+main h6 {
   color: #02cee9;
 }
 
-.welcome {
+main .welcome {
   align-content: space-between;
 }
 
-p {
+main p {
   padding: 2.5rem;
   vertical-align: middle;
   text-align: center;
