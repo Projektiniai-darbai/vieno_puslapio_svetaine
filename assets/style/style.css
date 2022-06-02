@@ -2,90 +2,6 @@
 Variables
 =============== */
 /* Fonts */
-section {
-  background-color: #17c2a4;
-  height: 100vh;
-  color: #ffffff;
-  font-family: "Titillium Web", sans-serif;
-}
-
-.hr {
-  display: inline;
-  background-color: #14a58c;
-  border: 0;
-  width: 5%;
-  padding: 1.5px;
-  margin-left: 48%;
-  vertical-align: middle;
-  opacity: 1;
-}
-
-header h1,
-section h2 {
-  letter-spacing: 0.1em;
-  text-align: center;
-  padding-top: 12vh;
-  color: #ffffff;
-}
-
-h2,
-h5,
-button {
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h5 {
-  font-weight: bold;
-}
-
-h5 {
-  padding-top: 5vh;
-  font-size: 1.2em;
-}
-
-div p {
-  font-weight: 300;
-}
-
-.desc {
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-section div .img-fluid {
-  padding-left: 24%;
-  height: 124px;
-}
-
-section .row:nth-child(2) {
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-
-@media (max-width: 1200px) {
-  section {
-    height: auto;
-  }
-
-  section .container-fluid .row:nth-child(2) {
-    padding: 0;
-    text-align: center;
-  }
-
-  section div .img-fluid {
-    padding-left: 0;
-    height: 80px !important;
-  }
-}
-@media (max-width: 425px) {
-  section div .img-fluid {
-    padding-left: 0;
-    height: 60px !important;
-  }
-}
 body {
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.02em;
@@ -158,6 +74,90 @@ header > p > button {
     padding: 20px;
   }
 }
+.section {
+  background-color: #17c2a4;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.hr {
+  display: inline;
+  background-color: #14a58c;
+  border: 0;
+  width: 5%;
+  padding: 1.5px;
+  margin-left: 48%;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+header h1,
+.section h2 {
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 12vh;
+  color: #ffffff;
+}
+
+h2,
+h5,
+button {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h5 {
+  font-weight: bold;
+}
+
+h5 {
+  padding-top: 5vh;
+  font-size: 1.2em;
+}
+
+div p {
+  font-weight: 300;
+}
+
+.desc {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.section div .img-fluid {
+  padding-left: 24%;
+  height: 124px;
+}
+
+.section .row:nth-child(2) {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    height: auto;
+  }
+
+  .section .container-fluid .row:nth-child(2) {
+    padding: 0;
+    text-align: center;
+  }
+
+  .section div .img-fluid {
+    padding-left: 0;
+    height: 80px !important;
+  }
+}
+@media (max-width: 425px) {
+  .section div .img-fluid {
+    padding-left: 0;
+    height: 60px !important;
+  }
+}
 main body {
   height: 100vh;
   background-color: #e7f1f8;
@@ -210,11 +210,10 @@ main p {
   text-align: center;
 }
 
-
 footer {
   background-color: #3c5499;
   color: #ffffff;
-  margin-top: 150px;
+  padding-top: 50px;
 }
 
 .form-control {
@@ -241,7 +240,6 @@ footer .button {
   text-align: center;
 }
 
-=======
 /* ==================PORTFOLIO KODAS============================ */
 /* reset */
 #main {
