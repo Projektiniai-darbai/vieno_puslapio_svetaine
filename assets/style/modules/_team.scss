@@ -1,5 +1,4 @@
 main {
-  height: 100vh;
   background-color: #ecf4fa;
   align-content: center;
 }
@@ -12,7 +11,7 @@ main hr {
 }
 
 main .container {
-  margin-bottom: 5rem;
+  
   text-align: center;
 }
 
@@ -50,7 +49,9 @@ main h6 {
 main .welcome {
   align-content: space-between;
 }
-
+main .row{
+  padding-bottom: 5rem;
+}
 main .col {
   margin-left: 1rem;
   margin-right: 1rem;
