@@ -160,9 +160,9 @@ div p {
   }
 }
 
-main body {
+main {
   height: 100vh;
-  background-color: #e7f1f8;
+  background-color: #ecf4fa;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -176,7 +176,6 @@ main hr {
 
 main .container {
   margin-bottom: 5rem;
-  margin-top: 7rem;
   text-align: center;
 }
 
@@ -198,6 +197,10 @@ main .face {
 
 main a {
   text-decoration: none;
+}
+
+main h1 {
+  padding-top: 5rem;
 }
 
 main h5 {

@@ -1,6 +1,6 @@
-main body {
+main {
   height: 100vh;
-  background-color: #e7f1f8;
+  background-color: #ecf4fa;
   align-content: center;
 }
 
@@ -13,7 +13,6 @@ main hr {
 
 main .container {
   margin-bottom: 5rem;
-  margin-top: 7rem;
   text-align: center;
 }
 
@@ -36,10 +35,14 @@ main .face {
 main a {
   text-decoration: none;
 }
+main h1 {
+  padding-top: 5rem;
+}
 main h5 {
   font-weight: 300;
   padding: 0;
 }
+
 main h6 {
   color: rgb(2, 206, 233);
 }
@@ -50,7 +53,7 @@ main .welcome {
 
 main .col {
   margin-left: 1rem;
-  margin-right: 1rem;  
+  margin-right: 1rem;
 }
 
 main p {
