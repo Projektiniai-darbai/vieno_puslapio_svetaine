@@ -1,8 +1,170 @@
-@use 'var';
+/* =============== 
+Variables
+=============== */
+/* Fonts */
+body {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+header {
+  padding-top: 30px;
+  height: 100vh;
+  background-color: #87509c;
+}
+
+nav {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 100px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active,
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: #643a79;
+}
+
+nav a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial;
+  text-align: center;
+}
+
+header > p {
+  text-align: center;
+  margin-top: 80px;
+}
+
+header > p > button {
+  font-size: 14px;
+  background-color: #eb7d4b;
+  color: #ffffff;
+  padding: 18px 105px;
+  border: 0;
+  border-bottom: 5px solid #c55725;
+}
+
+.navbar-brand {
+  padding-left: 200px;
+}
+
+@media (max-width: 425px) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+  header > p > button {
+    padding: 20px;
+  }
+}
+
+.section {
+  background-color: #17c2a4;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.hr {
+  display: inline;
+  background-color: #14a58c;
+  border: 0;
+  width: 5%;
+  padding: 1.5px;
+  margin-left: 48%;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+header h1,
+.section h2 {
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 12vh;
+  color: #ffffff;
+}
+
+h2,
+h5,
+button {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h5 {
+  font-weight: bold;
+}
+
+h5 {
+  padding-top: 5vh;
+  font-size: 1.2em;
+}
+
+div p {
+  font-weight: 300;
+}
+
+.desc {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.section div .img-fluid {
+  padding-left: 24%;
+  height: 124px;
+}
+
+.section .row:nth-child(2) {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    height: auto;
+  }
+  .section .container-fluid .row:nth-child(2) {
+    padding: 0;
+    text-align: center;
+  }
+  .section div .img-fluid {
+    padding-left: 0;
+    height: 80px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .section div .img-fluid {
+    padding-left: 0;
+    height: 60px !important;
+  }
+}
+
 main body {
   height: 100vh;
   background-color: #e7f1f8;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 main hr {
@@ -13,7 +175,8 @@ main hr {
 }
 
 main .container {
-  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
   text-align: center;
 }
 
@@ -37,18 +200,252 @@ main a {
   text-decoration: none;
 }
 
+main h5 {
+  font-weight: 300;
+  padding: 0;
+}
+
 main h6 {
   color: #02cee9;
 }
 
 main .welcome {
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+main .col {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 main p {
-  padding: 2.5rem;
-  vertical-align: middle;
+  margin: 2rem;
+}
+
+footer {
+  background-color: #3c5499;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.form-control {
+  background-color: #273a71;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: white !important;
+}
+
+:-ms-input-placeholder {
+  color: white !important;
+}
+
+::-ms-input-placeholder {
+  color: white !important;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+.myButton {
+  background-color: #18a0cc;
+  border-radius: 3px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+  padding: 18px 76px;
+  text-decoration: none;
+}
+
+footer .button {
   text-align: center;
 }
 
+/* ==================PORTFOLIO KODAS============================ */
+/* reset */
+#main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.5em;
+}
+
+#main button {
+  border: none;
+  background: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 3px 10px;
+}
+
+li {
+  list-style: none;
+}
+
+#main img {
+  display: block;
+  margin: 0 auto;
+}
+
+#main h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.7em;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#main h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#main p {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.title-line {
+  width: 87px;
+  height: 3px;
+  background: #14a58c;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+#main .button {
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 18px 95px;
+  border-bottom: 5px solid #c86a43;
+  background: #eb7d4d;
+  color: #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.background {
+  background: #ffdd99;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+#main h1 {
+  color: #393939;
+  font-weight: 700;
+}
+
+#main .title-line {
+  background: #e5c37f;
+}
+
+#main .buttons {
+  display: inline-block;
+  list-style: none;
+}
+
+#main .buttons li {
+  float: left;
+}
+
+#main .buttons li {
+  background: #ebc985;
+  padding: 2px 14px;
+  margin-right: 5px;
+  color: #111;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+#main .buttons li:hover {
+  text-decoration: none;
+}
+
+#main .image {
+  margin-top: 50px;
+}
+
+#main .image li {
+  display: block;
+  padding-bottom: 30px;
+  color: #222;
+}
+
+#main .image h3 {
+  color: #222;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#main .button {
+  background: #17c2a4;
+  border-bottom: 5px solid #14a58c;
+  color: #fff;
+}
+
+#main .button:hover {
+  background: #e5c37f;
+  border-bottom: 5px solid #eb7d4b;
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+.buttons-container ul {
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0px 0 10px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.buttons-container li {
+  float: left;
+  list-style: none;
+}
+
+.buttons-container li button {
+  border: none;
+  color: #202020;
+  font-size: 1em;
+  padding: 5px 10px;
+  outline: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  font-weight: 400;
+}
+
+.buttons-container li button:hover,
+.buttons-container li button.selected {
+  color: #fff;
+}
+
+/* ==================PORTFOLIO KODAS PABAIGA============================ */
 /*# sourceMappingURL=style.css.map */
