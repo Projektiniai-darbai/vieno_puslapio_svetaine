@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA;;kBAEkB;AAsBlB,WAAW",
-    "sources": [
-        "../assets/style/var.scss"
-    ],
-    "names": [],
-    "file": "var.css"
-}
