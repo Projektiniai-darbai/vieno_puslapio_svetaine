@@ -19,7 +19,9 @@ nav {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-right: 100px;
 }
 
@@ -69,11 +71,11 @@ header > p > button {
   .navbar-brand {
     padding-left: 0;
   }
-
   header > p > button {
     padding: 20px;
   }
 }
+
 .section {
   background-color: #17c2a4;
   height: 100vh;
@@ -141,34 +143,35 @@ div p {
   .section {
     height: auto;
   }
-
   .section .container-fluid .row:nth-child(2) {
     padding: 0;
     text-align: center;
   }
-
   .section div .img-fluid {
     padding-left: 0;
     height: 80px !important;
   }
 }
+
 @media (max-width: 425px) {
   .section div .img-fluid {
     padding-left: 0;
     height: 60px !important;
   }
 }
+
 main body {
   height: 100vh;
   background-color: #e7f1f8;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 main hr {
-  color: rgb(148, 148, 148);
+  color: #949494;
   margin-left: 46.5%;
   width: 7%;
-  border: 2px solid rgb(148, 148, 148);
+  border: 2px solid #949494;
 }
 
 main .container {
@@ -197,11 +200,12 @@ main a {
 }
 
 main h6 {
-  color: rgb(2, 206, 233);
+  color: #02cee9;
 }
 
 main .welcome {
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 main p {
@@ -221,6 +225,18 @@ footer {
   border: none;
 }
 
+::-webkit-input-placeholder {
+  color: white !important;
+}
+
+:-ms-input-placeholder {
+  color: white !important;
+}
+
+::-ms-input-placeholder {
+  color: white !important;
+}
+
 ::placeholder {
   color: white !important;
 }
@@ -230,7 +246,7 @@ footer {
   border-radius: 3px;
   display: inline-block;
   color: #ffffff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 15px;
   padding: 18px 76px;
   text-decoration: none;
@@ -240,8 +256,11 @@ footer .button {
   text-align: center;
 }
 
+/* =============== 
+Variables
+=============== */
+/* Fonts */
 /* ==================PORTFOLIO KODAS============================ */
-/* reset */
 #main {
   margin: 0;
   padding: 0;
@@ -254,6 +273,13 @@ footer .button {
   line-height: 1.5em;
 }
 
+#main .background {
+  background: #ffdd99;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
 #main button {
   border: none;
   background: none;
@@ -262,50 +288,49 @@ footer .button {
   padding: 3px 10px;
 }
 
-li {
-  list-style: none;
-}
-
 #main img {
   display: block;
   margin: 0 auto;
 }
 
 #main h1 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2.7em;
-  font-weight: 600;
-  color: #fff;
+  font-size: 2.7 em;
+  font-weight: 700;
+  color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
 }
 
-#main h3 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 #main p {
-  font-size: 1.1em;
+  font-size: 1.1 em;
   margin-bottom: 5px;
-  display: block;
   margin-top: 5px;
+  display: block;
   font-weight: 400;
 }
 
-.title-line {
+#main .title-line {
   width: 87px;
   height: 3px;
-  background: #14a58c;
+  background: #e5c37f;
   margin: 0 auto;
   margin-top: 0px;
   margin-bottom: 15px;
+}
+
+#main .image {
+  margin-top: 50px;
+}
+
+#main .image .image-row .image-column {
+  display: block;
+  padding-bottom: 40px;
+  color: #000000;
+}
+
+#main .image .image-row .image-column p {
+  margin-top: 20px;
 }
 
 #main .button {
@@ -316,100 +341,40 @@ li {
   margin: 0 auto;
   margin-top: 30px;
   padding: 18px 95px;
-  border-bottom: 5px solid #c86a43;
-  background: #eb7d4d;
-  color: #fff;
+  background: #17c2a4;
+  border-bottom: 5px solid #14a58c;
+  color: #ffffff;
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
 
-.background {
-  background: #ffdd99;
-  padding-top: 110px;
-  padding-bottom: 110px;
-  text-align: center;
-}
-
-#main h1 {
-  color: #393939;
-  font-weight: 700;
-}
-
-#main .title-line {
-  background: #e5c37f;
-}
-
-#main .buttons {
-  display: inline-block;
-  list-style: none;
-}
-
-#main .buttons li {
-  float: left;
-}
-
-#main .buttons li {
-  background: #ebc985;
-  padding: 2px 14px;
-  margin-right: 5px;
-  color: #111;
-  text-transform: uppercase;
-  border-radius: 4px;
-}
-
-#main .buttons li:hover {
-  text-decoration: none;
-}
-
-#main .image {
-  margin-top: 50px;
-}
-
-#main .image li {
-  display: block;
-  padding-bottom: 30px;
-  color: #222;
-}
-
-#main .image h3 {
-  color: #222;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-#main .button {
-  background: #17c2a4;
-  border-bottom: 5px solid #14a58c;
-  color: #fff;
-}
-
 #main .button:hover {
-  background: #e5c37f;
-  border-bottom: 5px solid #eb7d4b;
+  background: #eb7d4b;
+  border-bottom: 5px solid #c55725;
 }
 
-.buttons-container {
+#main .buttons-container {
   text-align: center;
 }
 
-.buttons-container ul {
+#main .buttons-container ul {
   border-radius: 3px;
   display: inline-block;
-  margin: 0px 0 10px 0;
-  padding: 0;
+  margin: 20px 0 10px 0;
+  padding-top: 10px;
   overflow: hidden;
 }
 
-.buttons-container li {
+#main .buttons-container li {
   float: left;
   list-style: none;
 }
 
-.buttons-container li button {
+#main .buttons-container li button {
   border: none;
-  color: #202020;
-  font-size: 1em;
+  color: #000000;
+  font-size: 1 em;
   padding: 5px 10px;
   outline: none;
   -webkit-transition: background-color 0.2s;
@@ -417,11 +382,30 @@ li {
   font-weight: 400;
 }
 
-.buttons-container li button:hover,
-.buttons-container li button.selected {
-  color: #fff;
+#main .buttons-container li button:hover,
+#main .buttons-container li button.selected {
+  color: #ffffff;
+}
+
+#main .buttons-container .buttons {
+  display: inline-block;
+  list-style: none;
+}
+
+#main .buttons-container .buttons li {
+  float: left;
+  background: #e5c37f;
+  padding: 2px 14px;
+  margin-right: 5px;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 4px;
+  list-style: none;
+}
+
+#main .buttons-container .buttons li:hover {
+  text-decoration: none;
 }
 
 /* ==================PORTFOLIO KODAS PABAIGA============================ */
-
 /*# sourceMappingURL=style.css.map */

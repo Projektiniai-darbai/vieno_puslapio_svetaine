@@ -1,176 +1,176 @@
-// pastaba: kodas kol kas plain css, nes naudojant sass elementus,
-// ne viskas veike kaip norejau. tikiuosi per savaitgali si reikala isspresti
+@import "./var";
 
 /* ==================PORTFOLIO KODAS============================ */
 
-/* reset */
-
-#main {
+@mixin reset {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 1.5em;
 }
 
-#main button {
+@mixin reset-btn {
   border: none;
   background: none;
   outline: none;
-  text-transform: uppercase;
-  padding: 3px 10px;
 }
 
-li {
-  list-style: none;
-}
-#main img {
-  display: block;
-  margin: 0 auto;
-}
-#main h1 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 2.7em;
-  font-weight: 600;
-  color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
+$font-weights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
 }
 
-#main h3 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+$font-sizes: (
+  "xx-small": 1 em,
+  "x-small": 1.1 em,
+  "medium": 1.4 em,
+  "large": 2.7 em,
+);
+
+@function size($size-name) {
+  @return map-get($font-sizes, $size-name);
 }
 
-#main p {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-  display: block;
-  margin-top: 5px;
-  font-weight: 400;
+@mixin padding-top-bottom($size) {
+  padding-top: $size;
+  padding-bottom: $size;
 }
 
-.title-line {
-  width: 87px;
-  height: 3px;
-  background: #14a58c;
-  margin: 0 auto;
-  margin-top: 0px;
-  margin-bottom: 15px;
-}
+#main {
+  @include reset;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: $font;
+  line-height: 1.5em;
 
-#main .button {
-  text-align: center;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 18px 95px;
-  border-bottom: 5px solid #c86a43;
-  background: #eb7d4d;
-  color: #fff;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
+  .background {
+    background: $clr-beige-1;
+    @include padding-top-bottom(110px);
+    text-align: center;
+  }
 
-.background {
-  background: #ffdd99;
-  padding-top: 110px;
-  padding-bottom: 110px;
-  text-align: center;
-}
-#main h1 {
-  color: #393939;
-  font-weight: 700;
-}
-#main .title-line {
-  background: #e5c37f;
-}
+  button {
+    @include reset-btn;
+    text-transform: uppercase;
+    padding: 3px 10px;
+  }
 
-#main .buttons {
-  display: inline-block;
-  list-style: none;
-}
-#main .buttons li {
-  float: left;
-}
-#main .buttons li {
-  background: #ebc985;
-  padding: 2px 14px;
-  margin-right: 5px;
-  color: #111;
-  text-transform: uppercase;
-  border-radius: 4px;
-}
-#main .buttons li:hover {
-  text-decoration: none;
-}
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 
-#main .image {
-  margin-top: 50px;
-}
-#main .image li {
-  display: block;
-  padding-bottom: 30px;
-  color: #222;
-}
-#main .image h3 {
-  color: #222;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-#main .button {
-  background: #17c2a4;
-  border-bottom: 5px solid #14a58c;
-  color: #fff;
-}
-#main .button:hover {
-  background: #e5c37f;
-  border-bottom: 5px solid #eb7d4b;
-}
+  h1 {
+    font-size: size(large);
+    font-weight: weight(bold);
+    color: $clr-black;
+    @include padding-top-bottom(10px);
+    text-transform: uppercase;
+  }
 
-.buttons-container {
-  text-align: center;
-}
-.buttons-container ul {
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0px 0 10px 0;
-  padding: 0;
-  overflow: hidden;
-}
+  p {
+    font-size: size(x-small);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: block;
+    font-weight: weight(regular);
+  }
 
-.buttons-container li {
-  float: left;
-  list-style: none;
-}
+  .title-line {
+    width: 87px;
+    height: 3px;
+    background: $clr-beige-2;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
 
-.buttons-container li button {
-  border: none;
-  color: #202020;
-  font-size: 1em;
-  padding: 5px 10px;
-  outline: none;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  font-weight: 400;
-}
+  .image {
+    margin-top: 50px;
+    .image-row {
+      .image-column {
+        display: block;
+        padding-bottom: 40px;
+        color: $clr-black;
+        p {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 
-.buttons-container li button:hover,
-.buttons-container li button.selected {
-  color: #fff;
+  .button {
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 18px 95px;
+    background: $clr-mint-1;
+    border-bottom: 5px solid $clr-mint-2;
+    color: $clr-white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .button:hover {
+    background: $clr-orange-1;
+    border-bottom: 5px solid $clr-orange-2;
+  }
+
+  .buttons-container {
+    text-align: center;
+    ul {
+      border-radius: 3px;
+      display: inline-block;
+      margin: 20px 0 10px 0;
+      padding-top: 10px;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+      list-style: none;
+      button {
+        border: none;
+        color: $clr-black;
+        font-size: size(xx-small);
+        padding: 5px 10px;
+        outline: none;
+        -webkit-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        font-weight: weight(regular);
+      }
+      button:hover,
+      button.selected {
+        color: $clr-white;
+      }
+    }
+
+    .buttons {
+      display: inline-block;
+      list-style: none;
+      li {
+        float: left;
+        background: $clr-beige-2;
+        padding: 2px 14px;
+        margin-right: 5px;
+        color: $clr-black;
+        text-transform: uppercase;
+        border-radius: 4px;
+        list-style: none;
+      }
+      li:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 /* ==================PORTFOLIO KODAS PABAIGA============================ */
