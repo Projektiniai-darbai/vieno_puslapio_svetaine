@@ -9,6 +9,10 @@ header {
   background-color: $clr-purple-1;
 }
 
+header > h1 {
+  font-size: 2.4rem;
+}
+
 nav {
   width: 100%;
   overflow: auto;

@@ -13,15 +13,17 @@ header {
   background-color: #87509c;
 }
 
+header > h1 {
+  font-size: 2.4rem;
+}
+
 nav {
   width: 100%;
   overflow: auto;
 }
 
 .navbar-expand-lg .navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding-right: 100px;
 }
 
@@ -71,11 +73,11 @@ header > p > button {
   .navbar-brand {
     padding-left: 0;
   }
+
   header > p > button {
     padding: 20px;
   }
 }
-
 .section {
   background-color: #17c2a4;
   height: 100vh;
@@ -143,34 +145,33 @@ div p {
   .section {
     height: auto;
   }
+
   .section .container-fluid .row:nth-child(2) {
     padding: 0;
     text-align: center;
   }
+
   .section div .img-fluid {
     padding-left: 0;
     height: 80px !important;
   }
 }
-
 @media (max-width: 425px) {
   .section div .img-fluid {
     padding-left: 0;
     height: 60px !important;
   }
 }
-
 main {
   background-color: #ecf4fa;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 main hr {
-  color: #949494;
+  color: rgb(148, 148, 148);
   margin-left: 46.5%;
   width: 7%;
-  border: 2px solid #949494;
+  border: 2px solid rgb(148, 148, 148);
 }
 
 main .container {
@@ -207,12 +208,11 @@ main h5 {
 }
 
 main h6 {
-  color: #02cee9;
+  color: rgb(2, 206, 233);
 }
 
 main .welcome {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-between;
 }
 
 main .row {
@@ -239,18 +239,6 @@ footer {
   border: none;
 }
 
-::-webkit-input-placeholder {
-  color: white !important;
-}
-
-:-ms-input-placeholder {
-  color: white !important;
-}
-
-::-ms-input-placeholder {
-  color: white !important;
-}
-
 ::placeholder {
   color: white !important;
 }
@@ -260,7 +248,7 @@ footer {
   border-radius: 3px;
   display: inline-block;
   color: #ffffff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 15px;
   padding: 18px 76px;
   text-decoration: none;
@@ -280,7 +268,7 @@ footer .button {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   line-height: 1.5em;
 }
 
@@ -302,7 +290,7 @@ li {
 }
 
 #main h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 2.7em;
   font-weight: 600;
   color: #fff;
@@ -312,7 +300,7 @@ li {
 }
 
 #main h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.4em;
   font-weight: 700;
   color: #fff;
@@ -453,4 +441,5 @@ li {
 }
 
 /* ==================PORTFOLIO KODAS PABAIGA============================ */
+
 /*# sourceMappingURL=style.css.map */
