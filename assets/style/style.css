@@ -13,6 +13,10 @@ header {
   background-color: #87509c;
 }
 
+header > h1 {
+  font-size: 2.4rem;
+}
+
 nav {
   width: 100%;
   overflow: auto;
@@ -158,9 +162,8 @@ div p {
     height: 60px !important;
   }
 }
-main body {
-  height: 100vh;
-  background-color: #171a1b;
+main {
+  background-color: #ecf4fa;
   align-content: center;
 }
 
@@ -172,7 +175,6 @@ main hr {
 }
 
 main .container {
-  margin-top: 5rem;
   text-align: center;
 }
 
@@ -196,6 +198,15 @@ main a {
   text-decoration: none;
 }
 
+main h1 {
+  padding-top: 5rem;
+}
+
+main h5 {
+  font-weight: 300;
+  padding: 0;
+}
+
 main h6 {
   color: rgb(2, 206, 233);
 }
@@ -204,10 +215,17 @@ main .welcome {
   align-content: space-between;
 }
 
+main .row {
+  padding-bottom: 5rem;
+}
+
+main .col {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 main p {
-  padding: 2.5rem;
-  vertical-align: middle;
-  text-align: center;
+  margin: 2rem;
 }
 
 footer {
