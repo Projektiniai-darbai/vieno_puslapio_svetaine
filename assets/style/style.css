@@ -3,7 +3,7 @@ Variables
 =============== */
 /* Fonts */
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -23,8 +23,6 @@ nav {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding-right: 100px;
 }
@@ -72,19 +70,23 @@ header > p > button {
 }
 
 @media (max-width: 425px) {
+  header {
+    height: auto;
+  }
+
   .navbar-brand {
     padding-left: 0;
   }
+
   header > p > button {
     padding: 20px;
   }
 }
-
 .section {
   background-color: #17c2a4;
   height: 100vh;
   color: #ffffff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .hr {
@@ -133,12 +135,12 @@ div p {
   line-height: 24px;
 }
 
-.section div .img-fluid {
+main .section div .img-fluid {
   padding-left: 24%;
   height: 124px;
 }
 
-.section .row:nth-child(2) {
+main .section .row:nth-child(2) {
   padding-left: 15vw;
   padding-right: 15vw;
 }
@@ -147,43 +149,40 @@ div p {
   .section {
     height: auto;
   }
+
   .section .container-fluid .row:nth-child(2) {
     padding: 0;
     text-align: center;
   }
+
   .section div .img-fluid {
     padding-left: 0;
     height: 80px !important;
   }
 }
-
 @media (max-width: 425px) {
   .section div .img-fluid {
     padding-left: 0;
     height: 60px !important;
   }
 }
-
-main body {
-  height: 100vh;
-
-  background-color: #e7f1f8;
-  -ms-flex-line-pack: center;
+#team {
+  background-color: #ecf4fa;
   align-content: center;
 }
 
-main hr {
-  color: #949494;
+#team hr {
+  color: rgb(148, 148, 148);
   margin-left: 46.5%;
   width: 7%;
-  border: 2px solid #949494;
+  border: 2px solid rgb(148, 148, 148);
 }
 
-main .container {
+#team .container {
   text-align: center;
 }
 
-main img {
+#team img {
   margin-top: 35px;
   margin: 5px;
   width: 30px;
@@ -191,7 +190,7 @@ main img {
   border-radius: 50%;
 }
 
-main .face {
+#team .face {
   margin-top: 8rem;
   margin-bottom: 5rem;
   width: 220px;
@@ -199,38 +198,37 @@ main .face {
   border-radius: 50%;
 }
 
-main a {
+#team a {
   text-decoration: none;
 }
 
-main h1 {
+#team h1 {
   padding-top: 5rem;
 }
 
-main h5 {
+#team h5 {
   font-weight: 300;
   padding: 0;
 }
 
-main h6 {
-  color: #02cee9;
+#team h6 {
+  color: rgb(2, 206, 233);
 }
 
-main .welcome {
-  -ms-flex-line-pack: justify;
+#team .welcome {
   align-content: space-between;
 }
 
-main .row {
+#team .row {
   padding-bottom: 5rem;
 }
 
-main .col {
+#team .col {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-main p {
+#team p {
   margin: 2rem;
 }
 
@@ -241,8 +239,10 @@ Variables
 footer {
   background-color: #3c5499;
   color: #ffffff;
-  padding-top: 10vh;
-  height: 90vh;
+}
+
+footer .container {
+  padding: 4vh;
 }
 
 .form-control {
@@ -250,36 +250,28 @@ footer {
   border: none;
 }
 
-::-webkit-input-placeholder {
-  color: white !important;
-}
-
-:-ms-input-placeholder {
-  color: white !important;
-}
-
-::-ms-input-placeholder {
-  color: white !important;
-}
-
 ::placeholder {
   color: white !important;
 }
 
-.myButton {
-  background-color: #18a0cc;
-  border-radius: 3px;
-  display: inline-block;
-  color: #ffffff;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 15px;
-  padding: 18px 76px;
-  text-decoration: none;
+.row {
+  text-align: center !important;
 }
 
-.button {
-  text-align: center;
-  padding: 20px;
+footer .footerLink {
+  width: auto;
+  display: block;
+  background-color: #32bae7;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  padding: 18px 76px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center !important;
+  margin-bottom: 10vh;
+  border-bottom: 5px solid #2b9ec5;
 }
 
 .line {
@@ -294,24 +286,25 @@ footer {
   background-color: #344b8e;
   color: white;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
+  width: 100%;
 }
 
-a {
+footer a {
   color: white;
   text-decoration: none;
   padding: 5px;
 }
 
-p {
+footer p {
   padding: 30px;
 }
 
-.container {
-  padding: 40px;
-  width: 45%;
-}
-
+/*# sourceMappingURL=style.css.map */
+/* =============== 
+Variables
+=============== */
+/* Fonts */
 /* ==================PORTFOLIO KODAS============================ */
 #main {
   margin: 0;
@@ -321,17 +314,15 @@ p {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   line-height: 1.5em;
 }
-
 #main .background {
   background: #ffdd99;
   padding-top: 110px;
   padding-bottom: 110px;
   text-align: center;
 }
-
 #main button {
   border: none;
   background: none;
@@ -339,12 +330,10 @@ p {
   text-transform: uppercase;
   padding: 3px 10px;
 }
-
 #main img {
   display: block;
   margin: 0 auto;
 }
-
 #main h1 {
   font-size: 2.7 em;
   font-weight: 700;
@@ -353,7 +342,6 @@ p {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-
 #main p {
   font-size: 1.1 em;
   margin-bottom: 5px;
@@ -361,7 +349,6 @@ p {
   display: block;
   font-weight: 400;
 }
-
 #main .title-line {
   width: 87px;
   height: 3px;
@@ -370,21 +357,17 @@ p {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-
 #main .image {
   margin-top: 50px;
 }
-
 #main .image .image-row .image-column {
   display: block;
   padding-bottom: 40px;
   color: #000000;
 }
-
 #main .image .image-row .image-column p {
   margin-top: 20px;
 }
-
 #main .button {
   text-align: center;
   width: auto;
@@ -400,16 +383,13 @@ p {
   border-left: 0;
   border-right: 0;
 }
-
 #main .button:hover {
   background: #eb7d4b;
   border-bottom: 5px solid #c55725;
 }
-
 #main .buttons-container {
   text-align: center;
 }
-
 #main .buttons-container ul {
   border-radius: 3px;
   display: inline-block;
@@ -417,12 +397,10 @@ p {
   padding-top: 10px;
   overflow: hidden;
 }
-
 #main .buttons-container li {
   float: left;
   list-style: none;
 }
-
 #main .buttons-container li button {
   border: none;
   color: #000000;
@@ -433,17 +411,14 @@ p {
   transition: background-color 0.2s;
   font-weight: 400;
 }
-
 #main .buttons-container li button:hover,
 #main .buttons-container li button.selected {
   color: #ffffff;
 }
-
 #main .buttons-container .buttons {
   display: inline-block;
   list-style: none;
 }
-
 #main .buttons-container .buttons li {
   float: left;
   background: #e5c37f;
@@ -454,10 +429,10 @@ p {
   border-radius: 4px;
   list-style: none;
 }
-
 #main .buttons-container .buttons li:hover {
   text-decoration: none;
 }
 
 /* ==================PORTFOLIO KODAS PABAIGA============================ */
+
 /*# sourceMappingURL=style.css.map */

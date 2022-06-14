@@ -5,10 +5,11 @@ Variables
 footer {
   background-color: #3c5499;
   color: #ffffff;
-  padding-top:10vh;
-  height:90vh;
+  // height: 100vh;
 }
-
+footer .container {
+  padding: 4vh;
+}
 .form-control {
   background-color: #273a71;
   border: none;
@@ -17,21 +18,23 @@ footer {
 ::placeholder {
   color: white !important;
 }
-
-.myButton {
-  background-color: #18a0cc;
+.row {
+  text-align: center !important;
+}
+footer .footerLink {
+  width: auto;
+  display: block;
+  background-color: #32bae7;
   border-radius: 3px;
-  display: inline-block;
   color: #ffffff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 15px;
   padding: 18px 76px;
+  margin: 0 auto;
   text-decoration: none;
-}
-
-.button {
-  text-align: center;
-  padding: 20px;
+  text-align: center !important;
+  margin-bottom: 10vh;
+  border-bottom: 5px solid #2b9ec5;
 }
 
 .line {
@@ -46,22 +49,22 @@ footer {
   background-color: #344b8e;
   color: white;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
+  width: 100%;
 }
 
-a {
+footer a {
   color: white;
   text-decoration: none;
   padding: 5px;
 }
 
-p{
+footer p {
   padding: 30px;
 }
 
-.container{
-  padding: 40px;
-  width: 45%;
-}
+// .container {
+//   padding: 40px;
+// }
 
 /*# sourceMappingURL=style.css.map */

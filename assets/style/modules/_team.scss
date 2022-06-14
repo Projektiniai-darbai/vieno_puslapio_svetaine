@@ -1,21 +1,20 @@
-main {
+#team {
   background-color: #ecf4fa;
   align-content: center;
 }
 
-main hr {
+#team hr {
   color: rgb(148, 148, 148);
   margin-left: 46.5%;
   width: 7%;
   border: 2px solid rgb(148, 148, 148);
 }
 
-main .container {
-  
+#team .container {
   text-align: center;
 }
 
-main img {
+#team img {
   margin-top: 35px;
   margin: 5px;
   width: 30px;
@@ -23,7 +22,7 @@ main img {
   border-radius: 50%;
 }
 
-main .face {
+#team .face {
   margin-top: 8rem;
   margin-bottom: 5rem;
   width: 220px;
@@ -31,33 +30,32 @@ main .face {
   border-radius: 50%;
 }
 
-main a {
+#team a {
   text-decoration: none;
 }
-main h1 {
+#team h1 {
   padding-top: 5rem;
 }
-main h5 {
+#team h5 {
   font-weight: 300;
   padding: 0;
 }
 
-main h6 {
+#team h6 {
   color: rgb(2, 206, 233);
 }
 
-main .welcome {
+#team .welcome {
   align-content: space-between;
 }
-main .row{
+#team .row {
   padding-bottom: 5rem;
 }
-main .col {
+#team .col {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-main p {
+#team p {
   margin: 2rem;
-
 }

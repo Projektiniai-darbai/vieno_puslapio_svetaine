@@ -59,6 +59,9 @@ header > p > button {
 }
 
 @media (max-width: 425px) {
+  header {
+    height: auto;
+  }
   .navbar-brand {
     padding-left: 0;
   }
