@@ -13,6 +13,10 @@ header {
   background-color: #87509c;
 }
 
+header > h1 {
+  font-size: 2.4rem;
+}
+
 nav {
   width: 100%;
   overflow: auto;
@@ -160,12 +164,14 @@ div p {
   }
 }
 
+
 main body {
   height: 100vh;
 
   background-color: #e7f1f8;
   -ms-flex-line-pack: center;
       align-content: center;
+
 }
 
 main hr {
@@ -176,7 +182,6 @@ main hr {
 }
 
 main .container {
-  margin-top: 5rem;
   text-align: center;
 }
 
@@ -200,6 +205,15 @@ main a {
   text-decoration: none;
 }
 
+main h1 {
+  padding-top: 5rem;
+}
+
+main h5 {
+  font-weight: 300;
+  padding: 0;
+}
+
 main h6 {
   color: #02cee9;
 }
@@ -209,16 +223,28 @@ main .welcome {
       align-content: space-between;
 }
 
-main p {
-  padding: 2.5rem;
-  vertical-align: middle;
-  text-align: center;
+main .row {
+  padding-bottom: 5rem;
 }
 
+main .col {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main p {
+  margin: 2rem;
+}
+
+/* =============== 
+Variables
+=============== */
+/* Fonts */
 footer {
   background-color: #3c5499;
   color: #ffffff;
-  padding-top: 50px;
+  padding-top: 10vh;
+  height: 90vh;
 }
 
 .form-control {
@@ -253,14 +279,42 @@ footer {
   text-decoration: none;
 }
 
-footer .button {
+.button {
   text-align: center;
+  padding: 20px;
 }
 
-/* =============== 
-Variables
-=============== */
-/* Fonts */
+.line {
+  background-color: #273a71;
+  padding: 1.5px;
+  border: 0;
+  width: 10%;
+  margin-left: 45%;
+}
+
+.footer {
+  background-color: #344b8e;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+p {
+  padding: 30px;
+}
+
+.container {
+  padding: 40px;
+  width: 45%;
+}
+
 /* ==================PORTFOLIO KODAS============================ */
 #main {
   margin: 0;
