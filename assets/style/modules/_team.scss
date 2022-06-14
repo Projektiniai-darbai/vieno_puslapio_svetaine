@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-#team img {
+#team a > img {
   margin-top: 35px;
   margin: 5px;
   width: 30px;
@@ -25,9 +25,9 @@
 #team .face {
   margin-top: 8rem;
   margin-bottom: 5rem;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 #team a {
@@ -58,4 +58,15 @@
 
 #team p {
   margin: 2rem;
+}
+@media (max-width: 425px) {
+  #team .face {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 80px;
+    height: 80px;
+  }
+  #team h1 {
+    padding-top: unset;
+  }
 }

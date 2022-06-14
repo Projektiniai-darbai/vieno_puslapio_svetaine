@@ -72,4 +72,8 @@ main .section .row:nth-child(2) {
     padding-left: 0;
     height: 60px !important;
   }
+  header h1,
+  .section h2 {
+    padding-top: unset;
+  }
 }

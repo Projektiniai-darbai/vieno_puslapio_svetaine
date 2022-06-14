@@ -23,7 +23,7 @@ nav {
 }
 ul {
   padding: 0;
-  margin: 0 0 0 150px;
+  margin: 0 0 0;
   list-style: none;
 }
 
@@ -46,7 +46,9 @@ header > p {
   text-align: center;
   margin-top: 80px;
 }
-header > p > button {
+header > button {
+  display: block;
+  margin: 0 auto;
   font-size: 14px;
   background-color: $clr-orange-1;
   color: $clr-white;
@@ -65,7 +67,11 @@ header > p > button {
   .navbar-brand {
     padding-left: 0;
   }
-  header > p > button {
-    padding: 20px;
+  header > button {
+    padding: 10px;
+  }
+  header > h1 {
+    font-size: unset;
+    padding-top: unset;
   }
 }
