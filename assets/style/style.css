@@ -162,6 +162,7 @@ div p {
 
 main body {
   height: 100vh;
+
   background-color: #e7f1f8;
   -ms-flex-line-pack: center;
       align-content: center;
