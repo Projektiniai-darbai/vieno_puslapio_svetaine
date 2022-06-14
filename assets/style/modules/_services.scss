@@ -1,4 +1,4 @@
-.section {
+#section {
   background-color: $clr-mint-1;
   height: 100vh;
   color: $clr-white;
@@ -16,7 +16,7 @@
   opacity: 1;
 }
 header h1,
-.section h2 {
+#section h2 {
   letter-spacing: 0.1em;
   text-align: center;
   padding-top: 12vh;
@@ -45,35 +45,45 @@ div p {
   line-height: 24px;
 }
 
-main .section div .img-fluid {
+main #section div .img-fluid {
   padding-left: 24%;
   height: 124px;
 }
 
-main .section .row:nth-child(2) {
+main #section .row:nth-child(2) {
   padding-left: 15vw;
   padding-right: 15vw;
 }
 @media (max-width: 1200px) {
-  .section {
+  #section {
     height: auto;
   }
-  .section .container-fluid .row:nth-child(2) {
+  #section .container-fluid .row:nth-child(2) {
     padding: 0;
     text-align: center;
   }
-  .section div .img-fluid {
+  #section div .img-fluid {
     padding-left: 0;
     height: 80px !important;
   }
 }
 @media (max-width: 425px) {
-  .section div .img-fluid {
+  #section div .img-fluid {
     padding-left: 0;
     height: 60px !important;
   }
   header h1,
-  .section h2 {
-    padding-top: unset;
+  #section h2 {
+    padding-top: 4vh;
+  }
+  h5 {
+    display: inline;
+  }
+}
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
   }
 }

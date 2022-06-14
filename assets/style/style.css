@@ -13,6 +13,15 @@ header {
   background-color: #87509c;
 }
 
+.navbar {
+  background-color: #87509c;
+  position: fixed;
+  text-align: right;
+  line-height: 1.5em;
+  z-index: 100;
+  color: white;
+}
+
 header > h1 {
   font-size: 2.4rem;
 }
@@ -59,6 +68,7 @@ header > p {
 header > button {
   display: block;
   margin: 0 auto;
+  margin-top: 80px;
   font-size: 14px;
   background-color: #eb7d4b;
   color: #ffffff;
@@ -89,7 +99,7 @@ header > button {
     padding-top: unset;
   }
 }
-.section {
+#section {
   background-color: #17c2a4;
   height: 100vh;
   color: #ffffff;
@@ -108,7 +118,7 @@ header > button {
 }
 
 header h1,
-.section h2 {
+#section h2 {
   letter-spacing: 0.1em;
   text-align: center;
   padding-top: 12vh;
@@ -142,59 +152,70 @@ div p {
   line-height: 24px;
 }
 
-main .section div .img-fluid {
+main #section div .img-fluid {
   padding-left: 24%;
   height: 124px;
 }
 
-main .section .row:nth-child(2) {
+main #section .row:nth-child(2) {
   padding-left: 15vw;
   padding-right: 15vw;
 }
 
 @media (max-width: 1200px) {
-  .section {
+  #section {
     height: auto;
   }
 
-  .section .container-fluid .row:nth-child(2) {
+  #section .container-fluid .row:nth-child(2) {
     padding: 0;
     text-align: center;
   }
 
-  .section div .img-fluid {
+  #section div .img-fluid {
     padding-left: 0;
     height: 80px !important;
   }
 }
 @media (max-width: 425px) {
-  .section div .img-fluid {
+  #section div .img-fluid {
     padding-left: 0;
     height: 60px !important;
   }
 
   header h1,
-.section h2 {
-    padding-top: unset;
+#section h2 {
+    padding-top: 4vh;
+  }
+
+  h5 {
+    display: inline;
   }
 }
-#team {
+@media (min-width: 768px) {
+  .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+.team {
   background-color: #ecf4fa;
   align-content: center;
 }
 
-#team hr {
+.team hr {
   color: rgb(148, 148, 148);
   margin-left: 46.5%;
   width: 7%;
   border: 2px solid rgb(148, 148, 148);
 }
 
-#team .container {
+.team .container {
   text-align: center;
 }
 
-#team a > img {
+.team a > img {
   margin-top: 35px;
   margin: 5px;
   width: 30px;
@@ -202,7 +223,7 @@ main .section .row:nth-child(2) {
   border-radius: 50%;
 }
 
-#team .face {
+.team .face {
   margin-top: 8rem;
   margin-bottom: 5rem;
   border-radius: 100%;
@@ -210,50 +231,50 @@ main .section .row:nth-child(2) {
   height: 150px;
 }
 
-#team a {
+.team a {
   text-decoration: none;
 }
 
-#team h1 {
+.team h1 {
   padding-top: 5rem;
 }
 
-#team h5 {
+.team h5 {
   font-weight: 300;
   padding: 0;
 }
 
-#team h6 {
+.team h6 {
   color: rgb(2, 206, 233);
 }
 
-#team .welcome {
+.team .welcome {
   align-content: space-between;
 }
 
-#team .row {
+.team .row {
   padding-bottom: 5rem;
 }
 
-#team .col {
+.team .col {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-#team p {
+.team p {
   margin: 2rem;
 }
 
 @media (max-width: 425px) {
-  #team .face {
-    margin-top: unset;
-    margin-bottom: unset;
+  .team .face {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     width: 80px;
     height: 80px;
   }
 
-  #team h1 {
-    padding-top: unset;
+  .team h1 {
+    padding-top: 5vh;
   }
 }
 /* =============== 
