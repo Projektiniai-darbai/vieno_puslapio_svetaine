@@ -18,8 +18,8 @@ footer .container {
 ::placeholder {
   color: white !important;
 }
-.row {
-  text-align: center !important;
+footer .row {
+  text-align: center;
 }
 footer .footerLink {
   width: auto;
@@ -62,9 +62,3 @@ footer a {
 footer p {
   padding: 30px;
 }
-
-// .container {
-//   padding: 40px;
-// }
-
-/*# sourceMappingURL=style.css.map */
